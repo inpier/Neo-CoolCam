@@ -433,9 +433,7 @@ def update_needed_settings()
 */
 def sync_properties()
 {
-    //###################
-    log.debug "437:sync_properties"
-    //###################
+    
     def currentProperties = state.currentProperties ?: [:]
     def configuration = parseXml(configuration_model())
 
